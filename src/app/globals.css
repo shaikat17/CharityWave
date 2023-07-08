@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.my_button {
+  @apply  bg-primaryColor border-0 rounded-[8px] py-2 px-4 md:px-5 text-white text-[16px] capitalize
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.my_small_button {
+  @apply  bg-[#E8F5FF] border-0 rounded-[8px] px-2 py-1  text-secondaryColor text-sm  capitalize font-medium
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.my_secondary_button {
+  @apply  bg-secondaryColor border-0 rounded-[8px] py-2 px-4 md:px-7 text-white text-[16px]  capitalize font-medium
+}
+.my_small_secondary_button {
+  @apply  bg-secondaryColor  rounded-[8px] px-2 py-1  text-white text-sm  capitalize font-medium
 }

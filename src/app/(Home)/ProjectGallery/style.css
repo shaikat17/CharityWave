@@ -1,0 +1,25 @@
+.conatiner_box{
+    position: relative;
+}
+.conatiner_box .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: black;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.conatiner_box:hover .overlay{
+    opacity: .8;
+}

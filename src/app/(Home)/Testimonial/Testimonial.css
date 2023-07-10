@@ -1,0 +1,72 @@
+.card1 {
+    animation: particlemove1 20s infinite linear;
+    animation-delay: 8s;
+}
+.card2 {
+    animation: particlemove2 20s infinite linear;
+    animation-delay: 8s;
+}
+
+.card3 {
+    animation: particlemove3 20s infinite linear;
+    animation-delay: 8s;
+}
+@keyframes particlemove1 {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        opacity:.3;
+        z-index: 0;
+    }
+
+    100% {
+      
+        transform: translate(0px, 200px);
+
+    }
+}
+
+@keyframes particlemove3 {
+    0% {
+        transform: translateY(0px);
+    }
+50%{
+opacity: 1;
+        z-index: 100;
+}
+    100% {
+        opacity: 1;
+        z-index: 100;
+        transform: translate(-70px, -140px);
+
+    }
+}
+    @keyframes particlemove2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0.3;
+        z-index: 0;
+        transform: translate(70px,-140px);
+         
+    }
+
+
+}
+.imges{
+    animation: imgrotate 20s infinite linear;
+    animation-delay: 8s;
+}
+@keyframes imgrotate {
+    0% {            transform: rotate(180deg) scaleX(-1) translateY(0);
+
+    }
+
+    100% {
+transform: rotate(270deg) scaleX(-1)translateY(100%);
+}
+         
+    }

@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation'
 import style from './Navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 
 const liList = [
   { id: 1, title: 'Home', link: '/' },
@@ -49,11 +48,11 @@ function Navbar() {
             </ul>
           </div>
           <div className='w-full flex items-center cursor-pointer'>
-            <Image src="/logo.png" alt='logo' width={40} height={30} priority />
-            <span className='text-secondaryColor font-bold text-xl'>Charity~wave</span>
+            <Image src="/log.png" alt='logo' width={40} height={30} priority />
+            <span className='text-black font-bold text-xl'> Charity~wave</span>
           </div>
         </div>
-        <div className="navbar-center py-2 hidden lg:flex">
+        <div className="navbar-center py-0 hidden lg:flex">
           <ul className="space-x-2 menu menu-horizontal px-1 ">
             {
               liList.map(li => {

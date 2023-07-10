@@ -13,6 +13,7 @@ export const POST = async (request) => {
 };
 
 export const GET = async () => {
+  await connectMongoDB()
   const users = await User.find({})
   return NextResponse.json(users);
 };

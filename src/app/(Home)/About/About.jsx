@@ -9,7 +9,7 @@ const About = () => {
         <video controls width="100%" height="50%">
           <source src='/vdo.mp4' type="video/mp4"
           />
-          Sorry, your browser doesn't support videos.
+          Sorry, your browser doesn&apos;t support videos.
         </video>
         
         <div className="pl-3 my-auto">

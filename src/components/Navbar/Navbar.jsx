@@ -37,7 +37,7 @@ function Navbar() {
                   }
                   return (
                     <li className={style.li_style} key={li.id}>
-                      <Link className={isActive ? 'text_decoration' : 'text-black'} href={`${li.link}`}>
+                      <Link className={isActive ? 'red' : 'text-black'} href={`${li.link}`}>
                         {li.title}
                       </Link>
                     </li>

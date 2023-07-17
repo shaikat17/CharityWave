@@ -1,12 +1,12 @@
-// const { default: NextAuth } = require("next-auth/next");
+const { default: NextAuth } = require("next-auth/next");
 
 
-// const handler = NextAuth({
-//     // providers:[
-//     //     GoogleProvider({
+const handler = NextAuth({
+    // providers:[
+    //     GoogleProvider({
             
-//     //     })
-//     // ]
-// })
+    //     })
+    // ]
+})
 
-// export {handler as GET, handler as POST}
+export {handler as GET, handler as POST}

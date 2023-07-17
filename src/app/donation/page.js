@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import DonationCard from '@/components/DonationCard/DonationCard';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'

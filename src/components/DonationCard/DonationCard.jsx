@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import cardImg from '../../../public/cardImg.jpg';
 import { FaRegClock, FaMapMarkerAlt, FaCheckCircle, FaFolderPlus, FaArrowAltCircleRight } from "react-icons/fa";

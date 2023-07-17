@@ -1,4 +1,5 @@
 'use client'
+import DonationCard from '@/components/DonationCard/DonationCard';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { HiFilter } from 'react-icons/hi';
@@ -61,6 +62,7 @@ const DonationPage = () => {
         <Link href='/signup' className="my_button">Orphanage</Link>
         <Link href='/signup' className="my_button">Oldage</Link>
       </div>
+      <DonationCard></DonationCard>
     </>
 
   )

@@ -9,7 +9,7 @@ const liList = [
   { id: 1, title: 'Home', link: '/' },
   { id: 2, title: 'Donation', link: 'donation' },
   { id: 3, title: 'Events', link: 'events' },
-  { id: 4, title: 'Seek help', link: 'Seek_help' },
+  { id: 4, title: 'Seek help', link: 'seek_help' },
   { id: 5, title: 'Blog', link: 'blog' }
 ]
 
@@ -37,7 +37,7 @@ function Navbar() {
                   }
                   return (
                     <li className={style.li_style} key={li.id}>
-                      <Link className={isActive ? 'red' : 'text-black'} href={`${li.link}`}>
+                      <Link className={isActive ? 'text-red-900' : 'text-black'} href={`${li.link}`}>
                         {li.title}
                       </Link>
                     </li>

@@ -1,21 +1,27 @@
 "use client";
-import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { HiFilter } from "react-icons/hi";
 
 const DonationPage = () => {
-  const [categoryName, setCategoryName] = useState("");
+  const [categoryName, setCategoryName] = useState("medical");
   const [categoryData, setCategoryData] = useState([]);
 
   const locationHandler = (e) => {
     const searchValue = e.target.value;
+
+    // if(searchValue === "India"){
+    //   const newCategoryData = categoryData.filter(item => item.)
+    // }
   };
 
   useEffect(() => {
-    // fetch(`api/${categoryName}`)
-    //   .then((res) => res.json())
-    //   .then((data) => setCategoryData(data));
+    fetch(`api/${categoryName}`)
+      .then((res) => res.json())
+      .then((data) => setCategoryData(data));
   }, [categoryName]);
+
+  console.log(categoryData);
 
   return (
     <>
@@ -28,7 +34,7 @@ const DonationPage = () => {
               type="radio"
               value="seller"
               className="radio checked:bg-red-500"
-              checked
+              defaultChecked
             />
             <span className="label-text">All</span>
           </label>
@@ -38,7 +44,7 @@ const DonationPage = () => {
               type="radio"
               value="buyer"
               className="radio checked:bg-blue-500"
-              checked
+              defaultChecked
             />
             <span className="label-text">Emergency</span>
           </label>
@@ -88,6 +94,14 @@ const DonationPage = () => {
         <button onClick={() => setCategoryName("oldage")} className="my_button">
           Oldage
         </button>
+      </div>
+
+      <div>
+        {categoryData.map((item, index) => (
+          <div key={item.index}>
+            <p>{item.seeker_name}</p>
+          </div>
+        ))}
       </div>
     </>
   );

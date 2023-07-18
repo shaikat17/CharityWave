@@ -99,8 +99,8 @@ const DonationPage = () => {
       <div>
         {categoryData.map((item, index) => (
           <div key={item.index}>
-            <p>{item.seeker_name}</p>
-          </div>
+          <p>{item.seeker_name}</p>
+        </div>
         ))}
       </div>
     </>
@@ -108,3 +108,4 @@ const DonationPage = () => {
 };
 
 export default DonationPage;
+

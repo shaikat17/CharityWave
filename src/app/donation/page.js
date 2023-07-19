@@ -11,11 +11,14 @@ const DonationPage = () => {
   const locationHandler = (e) => {
     const searchValue = e.target.value;
 
-    // if(searchValue === "India"){
-    //   const newCategoryData = categoryData.filter(item => item.)
-    // }
-  };
 
+  // useEffect(() => {
+  //   fetch('api/education')
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       console.log(data)
+  //     })
+  // }, [])
   useEffect(() => {
     fetch(`api/${categoryName}`)
       .then((res) => res.json())

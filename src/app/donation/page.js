@@ -1,4 +1,5 @@
 "use client";
+import DonationCard from "@/components/DonationCard/DonationCard";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { HiFilter } from "react-icons/hi";
@@ -21,7 +22,6 @@ const DonationPage = () => {
       .then((data) => setCategoryData(data));
   }, [categoryName]);
 
-  console.log(categoryData);
 
   return (
     <>
@@ -96,12 +96,8 @@ const DonationPage = () => {
         </button>
       </div>
 
-      <div>
-        {categoryData.map((item, index) => (
-          <div key={item.index}>
-          <p>{item.seeker_name}</p>
-        </div>
-        ))}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto my-20">
+        {categoryData.map((item, index) => <DonationCard key={index} categoryData={item} ></DonationCard>)}
       </div>
     </>
   );

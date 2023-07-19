@@ -10,14 +10,6 @@ const DonationPage = () => {
     const searchValue = e.target.value;
   }
 
-
-  // useEffect(() => {
-  //   fetch('api/education')
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       console.log(data)
-  //     })
-  // }, [])
   useEffect(() => {
     fetch("api/education")
       .then((res) => res.json())

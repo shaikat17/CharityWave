@@ -10,21 +10,12 @@ const DonationPage = () => {
 
   const locationHandler = (e) => {
     const searchValue = e.target.value;
-
-
-  // useEffect(() => {
-  //   fetch('api/education')
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       console.log(data)
-  //     })
-  // }, [])
-  useEffect(() => {
+  }
+    useEffect(() => {
     fetch(`api/${categoryName}`)
       .then((res) => res.json())
       .then((data) => setCategoryData(data));
   }, [categoryName]);
-
 
   return (
     <>
@@ -107,4 +98,3 @@ const DonationPage = () => {
 };
 
 export default DonationPage;
-

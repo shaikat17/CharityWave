@@ -13,7 +13,7 @@ import Link from "next/link";
 const DonationCard = ({ categoryData, category }) => {
   const { _id, seeker_image, seeker_name, location, deadline, reason  } = categoryData;
 
-//   console.log(categoryData);
+  // console.log(categoryData);
   return (
     <div className="bg-gray-100 p-8 rounded-xl">
       <div className="flex justify-between mb-2">

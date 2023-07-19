@@ -1,11 +1,13 @@
 "use client"
 import { useSearchParams } from 'next/navigation'
+import { useState } from 'react';
 import { useEffect } from 'react';
 
 const DonationDetailsPage = ({params}) => {
+  const [singleData, setSingleData] = useState([])
   const getData = async (category, id) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/${category}/${id}`, {
+      const res = await fetch(`https://charity-wave.vercel.app/api/${category}/${id}`, {
         cache: 'no-store',
       });
 
@@ -29,6 +31,7 @@ const DonationDetailsPage = ({params}) => {
     const fetchData = async () => {
       const data = await getData(search, id);
       console.log(data);
+      setSingleData(data)
     };
 
     fetchData();
@@ -36,8 +39,7 @@ const DonationDetailsPage = ({params}) => {
 
   return (
     <div>
-      {/* {params.id}
-      {params.category} */}
+      {singleData}
     </div>
   );
 };

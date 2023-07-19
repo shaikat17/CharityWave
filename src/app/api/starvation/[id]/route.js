@@ -1,5 +1,4 @@
 import connectMongoDB from "@/config/mongodb";
-import Oldage from "@/models/oldageModel";
 import Starvation from "@/models/starvationModel";
 import { NextResponse } from "next/server";
 

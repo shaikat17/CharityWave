@@ -39,7 +39,7 @@ const DonationDetailsPage = ({params}) => {
 
   return (
     <div>
-      {singleData}
+      {/* {singleData} */}
     </div>
   );
 };

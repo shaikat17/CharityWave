@@ -97,7 +97,7 @@ const DonationPage = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto my-20">
-        {categoryData.map((item, index) => <DonationCard key={index} categoryData={item} ></DonationCard>)}
+        {categoryData.map((item, index) => <DonationCard key={index} categoryData={item} category={categoryName} ></DonationCard>)}
       </div>
     </>
   );

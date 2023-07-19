@@ -10,10 +10,10 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 
-const DonationCard = ({ categoryData }) => {
+const DonationCard = ({ categoryData, category }) => {
   const { _id, seeker_image, seeker_name, location, deadline, reason  } = categoryData;
 
-  console.log(categoryData);
+//   console.log(categoryData);
   return (
     <div className="bg-gray-100 p-8 rounded-xl">
       <div className="flex justify-between mb-2">
@@ -70,7 +70,7 @@ const DonationCard = ({ categoryData }) => {
             </p>
           </div>
           <div className="text-3xl text-orange-500">
-            <Link href={`/donation/${_id}`}>
+            <Link href={`/donation/${_id}?category=${category}`}>
               <FaArrowAltCircleRight></FaArrowAltCircleRight>
             </Link>
           </div>

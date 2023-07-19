@@ -35,13 +35,11 @@ const DonationDetailsPage = ({params}) => {
     };
 
     fetchData();
-    console.log(singleData)
   }, [search, id]);
-
   return (
     <div>
-      {/* <h1>{singleData?.seeker_name}</h1>
-      <h1>{singleData?.seeker_email}</h1> */}
+      <h1>{singleData?.seeker_name}</h1>
+      <h1>{singleData?.seeker_email}</h1>
     </div>
   );
 };

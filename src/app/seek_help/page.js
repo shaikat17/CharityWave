@@ -4,7 +4,10 @@ import useAxiosSecure from '@/hooks/useAxiosSecure';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 
-const page = () => {
+const SeekHelp = () => {
+    const [category, setCategory] = useState(null)
+    const [sub_category, setSub_category] = useState('')
+
     const userName = 's'
     const userEmail = 's@gmail.com'
     const photoUrl = 'https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
@@ -18,10 +21,6 @@ const page = () => {
         { value: "Orphanage", text: "Orphanage" },
         { value: "Oldage", text: "Oldage" },
     ]
-
-    const [category, setCategory] = useState(options[0].value)
-    const [sub_category, setSub_category] = useState('')
-
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
@@ -388,4 +387,4 @@ const page = () => {
     )
 }
 
-export default page
+export default SeekHelp

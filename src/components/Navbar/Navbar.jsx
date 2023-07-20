@@ -53,7 +53,7 @@ function Navbar() {
                 <li className={style.li_style} key={li.id}>
                   <Link
                     className={
-                      pathName === `${li.link}` ? "text-red-900" : "text-black"
+                      pathname === `${li.link}` ? "text-red-900" : "text-black"
                     }
                     href={`${li.link}`}
                   >
@@ -72,7 +72,7 @@ function Navbar() {
           <ul className="space-x-2 menu menu-horizontal px-1 ">
             {liList.map((li) => {
               let isActive = false;
-              if (pathName === `${li.link}`) {
+              if (pathname === `${li.link}`) {
                 isActive = true;
               }
               return (

@@ -4,6 +4,8 @@ import { usePathname } from 'next/navigation'
 import style from './Navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { AuthContext } from '@/provider/AuthProvider'
 
 const liList = [
   { id: 1, title: 'Home', link: '/' },
@@ -14,9 +16,14 @@ const liList = [
 ]
 
 function Navbar() {
+  const{user,logOut}=useContext(AuthContext);
   const pathname = usePathname()
   // const [isActive, setIsActive] = useState(false)
-
+  const handleLogOut=()=>{
+    logOut()
+    .then(()=>{})
+    .catch(error=>console.log(error));
+  }
   return (
     <div className=" bg-bgColor">
       <div className='navbar mx-auto max-w-7xl'>
@@ -73,7 +80,8 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-end space-x-6">
-          <Link href='/signup' className="my_button">Sign Up</Link>
+          {user? <><button onClick={handleLogOut} className='my_button'>Logout</button></>:
+          <><Link href='/login' className="my_button">SignIn</Link></>}
         </div>
       </div>
     </div>

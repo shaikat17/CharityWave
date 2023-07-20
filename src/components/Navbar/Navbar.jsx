@@ -86,6 +86,14 @@ function Navbar() {
                 </li>
               );
             })}
+            {
+              user && <div className="avatar">
+              <div className="w-10 rounded-full">
+              <Image src={user?.photoURL} width={80} height={80} alt={user?.displayName} />
+              </div>
+            </div>
+            }
+            {/* <li><Image src={user?.photoURL} width={80} height={80}></Image></li> */}
           </ul>
         </div>
         <div className="navbar-end space-x-6">

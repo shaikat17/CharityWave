@@ -155,3 +155,15 @@
 // }
 
 // export default page
+
+import React from 'react';
+
+const SeekHelp = () => {
+    return (
+        <div>
+            <h1>Seek Help</h1>
+        </div>
+    );
+};
+
+export default SeekHelp;

@@ -1,7 +1,7 @@
 import connectMongoDB from "@/config/mongodb";
+import Medical from "@/models/medicalModel";
 import { ClientSession } from "mongodb";
 import { NextResponse } from "next/server";
-import Medical from "../../../models/medicalModel";
 
 
 export const GET = async () => {

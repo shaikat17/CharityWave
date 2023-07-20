@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@types/istanbul-reports": "^3.0.1",
-    "daisyui": "^3.1.11"
+    "daisyui": "^3.1.11",
+    "encoding": "^0.1.13"
   }
 }

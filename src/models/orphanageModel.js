@@ -32,13 +32,13 @@ const orphanageSchema = new Schema(
         reason: {
             type: String,
         },
-        organization_name: {
+        orphanag_name: {
             type: String,
         },
-        organization_location: {
+        orphanag_location: {
             type: String,
         },
-        organization_contact_number: {
+        orphanag_contact_number: {
             type: String,
         },
       },

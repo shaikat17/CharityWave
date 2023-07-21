@@ -32,13 +32,13 @@ const oldageSchema = new Schema(
         reason: {
             type: String,
         },
-        organization_name: {
+        oldAge_name: {
             type: String,
         },
-        organization_location: {
+        oldAge_location: {
             type: String,
         },
-        organization_contact_number: {
+        oldAge_contact_number: {
             type: String,
         },
       },

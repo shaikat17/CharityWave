@@ -27,7 +27,7 @@ const SeekHelp  = () => {
 
     const onSubmit = data => {
         const { amount, deadline, hospital_contact_number, hospital_location, hospital_name, location,
-            orphanag_contact_number, orphanag_location, orphanag_name,oldAge_name,oldAge_location,oldAge_contact_number, pharmacy_contact_number, pharmacy_location,
+            orphanage_contact_number, orphanage_location, orphanage_name,oldAge_name,oldAge_location,oldAge_contact_number, pharmacy_contact_number, pharmacy_location,
             pharmacy_name, phone_no, supermarket_contact_number, supermarket_location, supermarket_name,
             institution_contact_number, institution_location,institution_name, bookStore_contact_number, bookStore_location, bookStore_name
         } = data
@@ -57,7 +57,7 @@ const SeekHelp  = () => {
         }
         if (category === "Orphanage") {
             console.log({
-                amount, deadline, orphanag_contact_number, orphanag_location, orphanag_name,  location,
+                amount, deadline, orphanage_contact_number, orphanage_location, orphanage_name,  location,
           phone_no, seeker_name, seeker_email,photoUrl
             })
         }
@@ -248,22 +248,22 @@ const SeekHelp  = () => {
                             <label className="label">
                                 <span className="label-text">Orphanage Name</span>
                             </label>
-                            <input type="text" {...register("orphanag_name", { required: true })} name='orphanag_name' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.orphanag_name?.type === 'required' && <p role="alert" className='text-red-700'> orphanag_name is required</p>}
+                            <input type="text" {...register("orphanage_name", { required: true })} name='orphanage_name' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.orphanage_name?.type === 'required' && <p role="alert" className='text-red-700'> orphanage_name is required</p>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Orphanage location</span>
                             </label>
-                            <input type="text" {...register("orphanag_location", { required: true })} name='orphanag_location' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.orphanag_location?.type === 'required' && <p role="alert" className='text-red-700'> orphanag_location is required</p>}
+                            <input type="text" {...register("orphanage_location", { required: true })} name='orphanage_location' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.orphanage_location?.type === 'required' && <p role="alert" className='text-red-700'> orphanage_location is required</p>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Orphanage contact_number</span>
                             </label>
-                            <input type="text" {...register("orphanag_contact_number", { required: true })} name='orphanag_contact_number' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.orphanag_contact_number?.type === 'required' && <p role="alert" className='text-red-700'> orphanag_contact_number is required</p>}
+                            <input type="text" {...register("orphanage_contact_number", { required: true })} name='orphanage_contact_number' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.orphanage_contact_number?.type === 'required' && <p role="alert" className='text-red-700'> orphanage_contact_number is required</p>}
                         </div>
                     </>
                 }

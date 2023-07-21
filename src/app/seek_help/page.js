@@ -4,10 +4,7 @@ import useAxiosSecure from '@/hooks/useAxiosSecure';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 
-const SeekHelp = () => {
-    const [category, setCategory] = useState(null)
-    const [sub_category, setSub_category] = useState('')
-
+const SeekHelp  = () => {
     const userName = 's'
     const userEmail = 's@gmail.com'
     const photoUrl = 'https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
@@ -22,16 +19,20 @@ const SeekHelp = () => {
         { value: "Oldage", text: "Oldage" },
     ]
 
+    const [category, setCategory] = useState(options[0].value)
+    const [sub_category, setSub_category] = useState('')
+
+
     const { register, formState: { errors }, handleSubmit } = useForm();
 
     const onSubmit = data => {
         const { amount, deadline, hospital_contact_number, hospital_location, hospital_name, location,
-            organization__contact_number, organization__location, organization__name, pharmacy_contact_number, pharmacy_location,
+            orphanag_contact_number, orphanag_location, orphanag_name,oldAge_name,oldAge_location,oldAge_contact_number, pharmacy_contact_number, pharmacy_location,
             pharmacy_name, phone_no, supermarket_contact_number, supermarket_location, supermarket_name,
             institution_contact_number, institution_location,institution_name, bookStore_contact_number, bookStore_location, bookStore_name
         } = data
 
-        // console.log(data, sub_category, category)
+        console.log(data, sub_category, category)
 
         const seeker_name = userName
         const seeker_email = userEmail
@@ -56,20 +57,19 @@ const SeekHelp = () => {
         }
         if (category === "Orphanage") {
             console.log({
-                amount, deadline, organization__contact_number, organization__location, organization__name,  location,
+                amount, deadline, orphanag_contact_number, orphanag_location, orphanag_name,  location,
           phone_no, seeker_name, seeker_email,photoUrl
             })
         }
         if (category === "Oldage") {
             console.log({
-                amount, deadline, organization__contact_number, organization__location, organization__name,  location,
+                amount, deadline, oldAge_contact_number, oldAge_location, oldAge_name,  location,
           phone_no, seeker_name, seeker_email,photoUrl
             })
         }
 
     }
 
-    console.log(sub_category)
 
 
     return (
@@ -220,22 +220,22 @@ const SeekHelp = () => {
                             <label className="label">
                                 <span className="label-text">Oldage Name</span>
                             </label>
-                            <input type="text" {...register("organization_name", { required: true })} name='organization_name' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.organization_name?.type === 'required' && <p role="alert" className='text-red-700'> organization_name is required</p>}
+                            <input type="text" {...register("oldAge_name", { required: true })} name='oldAge_name' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.oldAge_name?.type === 'required' && <p role="alert" className='text-red-700'> oldAge_name is required</p>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Oldage location</span>
                             </label>
-                            <input type="text" {...register("organization_location", { required: true })} name='organization_location' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.organization_location?.type === 'required' && <p role="alert" className='text-red-700'> organization_location is required</p>}
+                            <input type="text" {...register("oldAge_location", { required: true })} name='oldAge_location' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.oldAge_location?.type === 'required' && <p role="alert" className='text-red-700'> oldAge_location is required</p>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Oldage contact_number</span>
                             </label>
-                            <input type="text" {...register("organization_contact_number", { required: true })} name='organization_contact_number' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.organization_contact_number?.type === 'required' && <p role="alert" className='text-red-700'> organization_contact_number is required</p>}
+                            <input type="text" {...register("oldAge_contact_number", { required: true })} name='oldAge_contact_number' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.oldAge_contact_number?.type === 'required' && <p role="alert" className='text-red-700'> oldAge_contact_number is required</p>}
                         </div>
                     </>
                 }
@@ -248,22 +248,22 @@ const SeekHelp = () => {
                             <label className="label">
                                 <span className="label-text">Orphanage Name</span>
                             </label>
-                            <input type="text" {...register("organization__name", { required: true })} name='organization__name' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.organization__name?.type === 'required' && <p role="alert" className='text-red-700'> organization__name is required</p>}
+                            <input type="text" {...register("orphanag_name", { required: true })} name='orphanag_name' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.orphanag_name?.type === 'required' && <p role="alert" className='text-red-700'> orphanag_name is required</p>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Orphanage location</span>
                             </label>
-                            <input type="text" {...register("organization__location", { required: true })} name='organization__location' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.organization__location?.type === 'required' && <p role="alert" className='text-red-700'> organization__location is required</p>}
+                            <input type="text" {...register("orphanag_location", { required: true })} name='orphanag_location' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.orphanag_location?.type === 'required' && <p role="alert" className='text-red-700'> orphanag_location is required</p>}
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Orphanage contact_number</span>
                             </label>
-                            <input type="text" {...register("organization__contact_number", { required: true })} name='organization__contact_number' placeholder="Enter Toy Name" className="input input-bordered" />
-                            {errors.organization__contact_number?.type === 'required' && <p role="alert" className='text-red-700'> organization__contact_number is required</p>}
+                            <input type="text" {...register("orphanag_contact_number", { required: true })} name='orphanag_contact_number' placeholder="Enter Toy Name" className="input input-bordered" />
+                            {errors.orphanag_contact_number?.type === 'required' && <p role="alert" className='text-red-700'> orphanag_contact_number is required</p>}
                         </div>
                     </>
                 }
@@ -387,4 +387,4 @@ const SeekHelp = () => {
     )
 }
 
-export default SeekHelp
+export default SeekHelp 

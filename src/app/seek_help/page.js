@@ -6,7 +6,13 @@ import { useState } from 'react';
 
 const SeekHelp  = () => {
     const InputData = async (cat, data) => {
-        const res = await fetch.post(`https://charity-wave.vercel.app/api/${cat}`, data)
+        const res = await fetch(`https://charity-wave.vercel.app/api/${cat}`,{
+            Method: 'POST',
+            Headers: {
+              'Content-Type': 'application/json',
+            }, 
+            body: JSON.stringify(data)}
+            )
         const result = res.json()
         console.log(result)
     }

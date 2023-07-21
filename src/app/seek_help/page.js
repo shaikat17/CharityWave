@@ -5,6 +5,11 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react';
 
 const SeekHelp  = () => {
+    const InputData = async (cat, data) => {
+        const res = await fetch.post(`https://charity-wave.vercel.app/api/${cat}`, data)
+        const result = res.json()
+        console.log(result)
+    }
     const userName = 's'
     const userEmail = 's@gmail.com'
     const photoUrl = 'https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
@@ -38,10 +43,12 @@ const SeekHelp  = () => {
         const seeker_email = userEmail
 
         if (category === 'Medical') {
-            console.log({
+            const data = {
                 amount, deadline, hospital_contact_number, hospital_location, hospital_name, location, pharmacy_contact_number, pharmacy_location,
                 sub_category,pharmacy_name, phone_no, seeker_name, seeker_email,photoUrl
-            })
+            }
+
+            InputData(category, data)
         }
         if (category === "Starvation") {
             console.log({

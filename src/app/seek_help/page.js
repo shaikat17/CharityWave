@@ -109,19 +109,20 @@ const SeekHelp = () => {
         phone_no,
         seeker_name,
         seeker_email,
-        photoUrl,
+        seeker_image: photoUrl,
       };
 
       InputData(category, data);
     }
     if (category === "Education") {
-      console.log({
+      const data = {
         amount,
         deadline,
         institution_name,
         institution_location,
         institution_contact_number,
         location,
+        reason,
         sub_category,
         bookStore_name,
         bookStore_location,
@@ -129,8 +130,10 @@ const SeekHelp = () => {
         phone_no,
         seeker_name,
         seeker_email,
-        photoUrl,
-      });
+        seeker_image: photoUrl,
+      };
+
+      InputData(category, data);
     }
     if (category === "Orphanage") {
       console.log({

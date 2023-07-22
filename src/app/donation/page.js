@@ -17,6 +17,7 @@ const DonationPage = () => {
       .then((data) => setCategoryData(data));
   }, [categoryName]);
 
+
   return (
     <>
       <div className="flex justify-between max-w-7xl my-8 mx-auto px-5 lg:px-0">
@@ -90,7 +91,7 @@ const DonationPage = () => {
         </button>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto my-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto my-20">
         {categoryData.map((item, index) => <DonationCard key={index} categoryData={item} category={categoryName} ></DonationCard>)}
       </div>
     </>

@@ -154,18 +154,21 @@ const SeekHelp = () => {
       
     }
     if (category === "Oldage") {
-      console.log({
+      const data = {
         amount,
         deadline,
         oldAge_contact_number,
         oldAge_location,
         oldAge_name,
         location,
+        reason,
         phone_no,
         seeker_name,
         seeker_email,
-        photoUrl,
-      });
+        seeker_image: photoUrl,
+      };
+      
+      InputData(category, data);
     }
   };
 

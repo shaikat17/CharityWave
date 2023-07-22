@@ -136,18 +136,22 @@ const SeekHelp = () => {
       InputData(category, data);
     }
     if (category === "Orphanage") {
-      console.log({
+      const data = {
         amount,
         deadline,
         orphanage_contact_number,
         orphanage_location,
         orphanage_name,
         location,
+        reason,
         phone_no,
         seeker_name,
         seeker_email,
-        photoUrl,
-      });
+        seeker_image: photoUrl,
+      };
+
+      InputData(category, data);
+      
     }
     if (category === "Oldage") {
       console.log({

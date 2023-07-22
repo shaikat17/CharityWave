@@ -24,10 +24,10 @@ const oldageSchema = new Schema(
             type: String,
         },
         emergency: {
-            type: String,
+            type: String, default: false,
         },
         verification: {
-            type: String,
+            type: String, default: false,
         },
         reason: {
             type: String,

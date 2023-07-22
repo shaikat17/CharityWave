@@ -9,7 +9,7 @@ const UpcomingEvents = () => {
       <h3 className='font-semibold text-2xl text-center mt-2 mb-8'>Upcoming Events!!</h3>
      {
       eventData.map(event=>
-        <div className="card card-side bg-base-100 shadow-lg mb-10">
+        <div key={event._id} className="card card-side bg-base-100 shadow-lg mb-10">
         <figure className='border-t-4 border-t-primaryColor border-l-4 border-l-primaryColor'><Image className='' width={400} height={600} priority src={event.image} alt="Movie" /></figure>
         <div className="card-body border-b-4 border-b-primaryColor border-r-4 border-r-primaryColor rounded-br-2xl">
           

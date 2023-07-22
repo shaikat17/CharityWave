@@ -1,24 +1,12 @@
 'use client'
 import React from 'react'
-import useAxiosSecure from '@/hooks/useAxiosSecure';
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 
 const SeekHelp  = () => {
-    const InputData = async (cat, data) => {
-        const res = await fetch(`https://charity-wave.vercel.app/api/${cat}`,{
-            Method: 'POST',
-            Headers: {
-              'Content-Type': 'application/json',
-            }, 
-            body: JSON.stringify(data)}
-            )
-        const result = res.json()
-        console.log(result)
-    }
-    const userName = 's'
-    const userEmail = 's@gmail.com'
-    const photoUrl = 'https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
+    const seeker_name = 's'
+    const seeker_email = 's@gmail.com'
+    const seeker_image = 'https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 
 
     const options = [
@@ -43,23 +31,51 @@ const SeekHelp  = () => {
             institution_contact_number, institution_location,institution_name, bookStore_contact_number, bookStore_location, bookStore_name
         } = data
 
-        console.log(data, sub_category, category)
+        // console.log(data, sub_category, category)
+        console.log(seeker_name, seeker_email, seeker_image)
 
         const seeker_name = userName
         const seeker_email = userEmail
 
         if (category === 'Medical') {
-            const data = {
-                amount, deadline, hospital_contact_number, hospital_location, hospital_name, location, pharmacy_contact_number, pharmacy_location,
-                sub_category,pharmacy_name, phone_no, seeker_name, seeker_email,photoUrl
-            }
+            // const data = {
+            //     seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, sub_category, hospital_name, hospital_location, hospital_contact_number, pharmacy_name, pharmacy_location, pharmacy_contact_number
+            // }
 
-            InputData(category, data)
+            console.log("Our Data", {
+                seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, sub_category, hospital_name, hospital_location, hospital_contact_number, pharmacy_name, pharmacy_location, pharmacy_contact_number
+            })
+
+            // fetch(`http://localhost:3000/api/medical`, {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-type": "application/json",
+            //     },
+            //     body: JSON.stringify({title: "ami", titlen: "tmi"})
+            // })
+            // .then(res => res.json())
+            // .then(data => console.log(data))
         }
         if (category === "Starvation") {
-            console.log({
-                amount, deadline, supermarket_contact_number, supermarket_location, supermarket_name, location, phone_no, seeker_name, seeker_email,photoUrl
-            })
+            // const data = {
+            //     seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, supermarket_name, supermarket_location, supermarket_contact_number
+            // }
+
+            // console.log({
+            //     seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, supermarket_name, supermarket_location, supermarket_contact_number
+            // })
+
+            // InputData("starvation", data)
+
+            // fetch(`http://localhost:3000/api/starvation`, {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-type": "application/json",
+            //     },
+            //     body: JSON.stringify(data)
+            // })
+            // .then(res => res.json())
+            // .then(data => console.log(data))
         }
         if (category === 'Education') {
             console.log({
@@ -91,10 +107,10 @@ const SeekHelp  = () => {
             <div className="card-body">
                 <div className='flex flex-col lg:flex-row justify-between gap-5'>
                     <div className="form-control w-full">
-                        <input type="text" defaultValue={userName} className="bg-primaryColor text-white font-medium input input-bordered" readOnly />
+                        <input type="text" defaultValue={seeker_name} className="bg-primaryColor text-white font-medium input input-bordered" readOnly />
                     </div>
                     <div className="form-control w-full">
-                        <input type="text" defaultValue={userEmail} className="bg-primaryColor text-white font-medium input input-bordered" readOnly />
+                        <input type="text" defaultValue={seeker_email} className="bg-primaryColor text-white font-medium input input-bordered" readOnly />
                     </div>
                 </div>
 

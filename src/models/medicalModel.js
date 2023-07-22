@@ -8,7 +8,7 @@ const medicalSchema = new Schema(
         seeker_email: {
           type: String,
         },
-        seeker_image: {
+        h: {
           type: String,
         },
         location: {

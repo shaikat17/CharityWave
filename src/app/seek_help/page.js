@@ -53,6 +53,7 @@ const SeekHelp  = () => {
                 amount, deadline, hospital_contact_number, hospital_location, hospital_name, location, pharmacy_contact_number, pharmacy_location,
                 sub_category,pharmacy_name, phone_no, seeker_name, seeker_email,photoUrl
             }
+            console.log(data)
 
             InputData(category, data)
         }

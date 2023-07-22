@@ -77,8 +77,8 @@ export default Volunteer
 const teamGroup = [
     {
         "id": 1,
-        "img_src": "https://images.unsplash.com/photo-1460056560479-46cf73637e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "name": "Ujjal Kumar Roy",
+        "img_src": "https://images.unsplash.com/photo-1474393695727-b2a2b9772181?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "shaikat",
         "email": "the404@coders.com",
         "phone": "0123456789"
     },
@@ -105,15 +105,15 @@ const teamGroup = [
     },
     {
         "id": 5,
-        "img_src": "https://images.unsplash.com/photo-1474393695727-b2a2b9772181?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "name": "shaikat",
+        "img_src": "https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "name": "Samia Ahmed",
         "email": "the404@coders.com",
         "phone": "0123456789"
     },
     {
         "id": 6,
-        "img_src": "https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-        "name": "Samia Ahmed",
+        "img_src": "https://images.unsplash.com/photo-1460056560479-46cf73637e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJveXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Ujjal Kumar Roy",
         "email": "the404@coders.com",
         "phone": "0123456789"
     }

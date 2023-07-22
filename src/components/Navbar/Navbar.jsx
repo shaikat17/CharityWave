@@ -10,8 +10,8 @@ import { AuthContext } from '@/provider/AuthProvider'
 const liList = [
   { id: 1, title: "Home", link: "/" },
   { id: 2, title: "Donation", link: "/donation" },
-  { id: 3, title: "Events", link: "/events" },
-  { id: 4, title: "Seek help", link: "/seek_help" },
+  { id: 3, title: "Seek help", link: "/seek_help" },
+  { id: 4, title: "Events", link: "/events" },
   { id: 5, title: "Blog", link: "/blog" },
 ];
 

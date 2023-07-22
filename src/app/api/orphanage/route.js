@@ -3,10 +3,10 @@ import Orphanage from "@/models/orphanageModel";
 import { NextResponse } from "next/server";
 
 export const POST = async (request) => {
-  const {seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, organization_name, organization_location, organization_contact_number} = await request.json()
+  const {seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, orphanage_name, orphanage_location, orphanage_contact_number} = await request.json()
   await connectMongoDB();
   // console.log(name, email, photoUrl, phone_no, location);
-  await Orphanage.create({seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, organization_name, organization_location, organization_contact_number})
+  await Orphanage.create({seeker_name, seeker_email, seeker_image, location, phone_no, deadline, amount, emergency, verification, reason, orphanage_name, orphanage_location, orphanage_contact_number})
   // await Topic.create({title, description})
   return NextResponse.json({ message: "Orphanage Data Created." }, { status: 201 });
 };

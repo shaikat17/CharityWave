@@ -18,6 +18,7 @@ const liList = [
 function Navbar() {
   const{user,logOut}=useContext(AuthContext);
   const pathname = usePathname()
+  // console.log(pathname)
   // const [isActive, setIsActive] = useState(false)
   const handleLogOut=()=>{
     logOut()
@@ -53,7 +54,7 @@ function Navbar() {
                 <li className={style.li_style} key={li.id}>
                   <Link
                     className={
-                      pathname === `${li.link}` ? "text-red-900" : "text-black"
+                      pathname === `${li.link}` ? `${style.active_class}` : "text-black"
                     }
                     href={`${li.link}`}
                   >
@@ -78,7 +79,7 @@ function Navbar() {
               return (
                 <li className={style.li_style} key={li.id}>
                   <Link
-                    className={isActive ? "text_decoration" : "text-black"}
+                    className={isActive ? `${style.active_class}` : "text-black"}
                     href={`${li.link}`}
                   >
                     {li.title}

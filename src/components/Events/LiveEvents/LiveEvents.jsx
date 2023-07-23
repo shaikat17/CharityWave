@@ -18,7 +18,7 @@ const LiveEvents = () => {
                 <div>
                     {
                         showVdo ?
-                            <video controls autoplay width="100%" height="100%">
+                            <video controls autoPlay width="100%" height="100%">
                                 <source src='/vdo.mp4' type="video/mp4"
                                 />
                                 Sorry, your browser doesn&apos;t support videos.

@@ -23,12 +23,12 @@ const LiveEvents = () => {
                                 />
                                 Sorry, your browser doesn&apos;t support videos.
                             </video>
-                            : <Image className="mx-auto rounded-3xl" src="https://images.unsplash.com/photo-1576085898323-218337e3e43c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt='logo' width={140} height={50} priority />
+                            : <Image className="mx-auto rounded-3xl" src="/live_img.png" alt='logo' width={140} height={50} priority />
                     }
                 </div>
                 <div>
                     <h1 className='font-semibold'>Aiding Hearts</h1>
-                    <p className='text-textColor text-[12px]'>Featured Event</p>
+                    <p className='text-textColor text-[12px]'>Happening Now</p>
                 </div>
                 <div className='flex gap-3'>
                     {

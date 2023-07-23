@@ -9,18 +9,18 @@ const BlogPage = () => {
     <div className='max-w-7xl my-8 mx-auto px-5 lg:px-0'>
 {
     BlogsData.map(blog=>
-    <div key={blog._id} className='card w-[80%] bg-base-100 shadow-xl mx-auto  mb-8 '>
+    <div key={blog._id} className='card w-[80%] bg-base-100 shadow-xl mx-auto  mb-10 '>
     <div className='bg-secondaryColor flex items-center gap-3 px-8 py-2'>
 
-       <label className="btn btn-ghost w-[50px] h-[50px] btn-circle avatar mx-auto">
+       <label className="btn btn-ghost w-[55px] h-[55px] btn-circle avatar mx-auto">
                   <div className='w-full rounded-full mx-auto'>
                     <Image src={blog?.author?.img} alt='logo' width={100} height={100} className='' priority />
                   </div>
                 </label>
 
     <div className='flex-grow justify-start'>
-                    <h5>{blog?.author?.name}</h5>
-                    <p>{moment().format('YYYY-MM-D')}</p>
+                    <h5 className='font-semibold text-lg'>{blog?.author?.name}</h5>
+                    <p className='text-[14px]'>{moment().format('YYYY-MM-D')}</p>
                 </div>
                 <FaBookmark />
                 <FaShareAlt />     

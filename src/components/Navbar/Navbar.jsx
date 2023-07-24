@@ -15,6 +15,12 @@ const liList = [
   { id: 5, title: "Blog", link: "/blog" },
 ];
 
+const userName = "s";
+const userEmail = "s@gmail.com";
+const photoUrl =
+  "https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60";
+
+
 function Navbar() {
   const{user,logOut}=useContext(AuthContext);
   const pathname = usePathname()
@@ -87,18 +93,21 @@ function Navbar() {
                 </li>
               );
             })}
-            {
-              user && <div className="avatar">
-              <div className="w-10 rounded-full">
-              <Image src={user?.photoURL} width={80} height={80} alt={user?.displayName} />
-              </div>
-            </div>
-            }
+
             {/* <li><Image src={user?.photoURL} width={80} height={80}></Image></li> */}
+         
           </ul>
         </div>
         <div className="navbar-end space-x-6">
-          {user? <><button onClick={handleLogOut} className='my_button'>Logout</button></>:
+        {
+              userName && <div className="avatar">
+              <div className="w-10 rounded-full">
+              <Image src={photoUrl} width={80} height={80} alt={userName} />
+              </div>
+            </div>
+            }
+            
+          {userName? <><button onClick={handleLogOut} className='my_button'>Logout</button></>:
           <><Link href='/login' className="my_button">SignIn</Link></>}
         </div>
       </div>

@@ -5,6 +5,12 @@
 .my_button {
   @apply  bg-primaryColor border-0 rounded-[8px] py-2 px-4 md:px-5 text-white text-[16px] capitalize
 }
+.my_category_button {
+  @apply  btn bg-white text-primaryColor border-t-[.5px] border-t-primaryColor border-b-4 border-b-primaryColor border-l-4 border-l-primaryColor hover:border-0  rounded-[8px] py-2 px-4 md:px-5  text-[16px] capitalize
+}
+
+
+
 .my_small_button {
   @apply  bg-[#F7F7F7] border-0 rounded-[8px] px-2 py-1  text-black text-sm  capitalize font-medium
 }

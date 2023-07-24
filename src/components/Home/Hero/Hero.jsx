@@ -8,22 +8,22 @@ import Image from 'next/image';
 const content = [
   {
     title: 'Always give without remembering',
-    button: 'Book Now',
+    button: 'Donate Now',
     image: '/img_1.png',
   },
   {
     title: 'Happiness result from what we give.',
-    button: 'Book Now',
+    button: 'Donate Now',
     image: '/img2.png',
   },
   {
     title: 'We make a life by what we give',
-    button: 'Book Now',
+    button: 'Donate Now',
     image: '/img3.png',
   },
   {
     title: 'The meaning of life is to find your gift',
-    button: 'Book Now',
+    button: 'Donate Now',
     image: '/img4.png',
   }
 

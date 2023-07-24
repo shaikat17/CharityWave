@@ -214,7 +214,6 @@ const SeekHelp = () => {
             />
             {errors.location?.type === "required" && (
               <p role="alert" className="text-red-700">
-                {" "}
                 Image is required
               </p>
             )}
@@ -232,7 +231,6 @@ const SeekHelp = () => {
             />
             {errors.phone_no?.type === "required" && (
               <p role="alert" className="text-red-700">
-                {" "}
                 class Name is required
               </p>
             )}
@@ -289,7 +287,6 @@ const SeekHelp = () => {
               />
               {errors.supermarket_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   Reason is required
                 </p>
               )}
@@ -395,7 +392,6 @@ const SeekHelp = () => {
               />
               {errors.supermarket_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   supermarket_name is required
                 </p>
               )}
@@ -413,7 +409,6 @@ const SeekHelp = () => {
               />
               {errors.supermarket_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   supermarket_location is required
                 </p>
               )}
@@ -431,7 +426,6 @@ const SeekHelp = () => {
               />
               {errors.supermarket_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   supermarket_contact_number is required
                 </p>
               )}
@@ -454,7 +448,6 @@ const SeekHelp = () => {
               />
               {errors.oldAge_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   oldAge_name is required
                 </p>
               )}
@@ -472,7 +465,6 @@ const SeekHelp = () => {
               />
               {errors.oldAge_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   oldAge_location is required
                 </p>
               )}
@@ -490,7 +482,6 @@ const SeekHelp = () => {
               />
               {errors.oldAge_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   oldAge_contact_number is required
                 </p>
               )}
@@ -513,7 +504,6 @@ const SeekHelp = () => {
               />
               {errors.orphanage_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   orphanage_name is required
                 </p>
               )}
@@ -531,7 +521,6 @@ const SeekHelp = () => {
               />
               {errors.orphanage_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   orphanage_location is required
                 </p>
               )}
@@ -549,7 +538,6 @@ const SeekHelp = () => {
               />
               {errors.orphanage_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   orphanage_contact_number is required
                 </p>
               )}
@@ -573,7 +561,6 @@ const SeekHelp = () => {
               />
               {errors.hospital_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   hospital_name is required
                 </p>
               )}
@@ -591,7 +578,6 @@ const SeekHelp = () => {
               />
               {errors.hospital_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   hospital_location is required
                 </p>
               )}
@@ -609,7 +595,6 @@ const SeekHelp = () => {
               />
               {errors.hospital_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   hospital_contact_number is required
                 </p>
               )}
@@ -631,7 +616,6 @@ const SeekHelp = () => {
               />
               {errors.pharmacy_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   pharmacy_name is required
                 </p>
               )}
@@ -649,7 +633,6 @@ const SeekHelp = () => {
               />
               {errors.pharmacy_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   pharmacy_location is required
                 </p>
               )}
@@ -667,7 +650,6 @@ const SeekHelp = () => {
               />
               {errors.pharmacy_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   pharmacy_contact_number is required
                 </p>
               )}
@@ -689,7 +671,6 @@ const SeekHelp = () => {
               />
               {errors.institution_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   institution_name is required
                 </p>
               )}
@@ -707,7 +688,6 @@ const SeekHelp = () => {
               />
               {errors.institution_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   institution_location is required
                 </p>
               )}
@@ -725,7 +705,6 @@ const SeekHelp = () => {
               />
               {errors.institution_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   institution_contact_number is required
                 </p>
               )}
@@ -747,7 +726,6 @@ const SeekHelp = () => {
               />
               {errors.bookStore_name?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   bookStore_name is required
                 </p>
               )}
@@ -765,7 +743,6 @@ const SeekHelp = () => {
               />
               {errors.bookStore_location?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   bookStore_location is required
                 </p>
               )}
@@ -783,7 +760,6 @@ const SeekHelp = () => {
               />
               {errors.bookStore_contact_number?.type === "required" && (
                 <p role="alert" className="text-red-700">
-                  {" "}
                   bookStore_contact_number is required
                 </p>
               )}

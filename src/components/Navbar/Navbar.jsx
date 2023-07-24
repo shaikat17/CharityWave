@@ -18,7 +18,7 @@ const liList = [
 const userName = "s";
 const userEmail = "s@gmail.com";
 const photoUrl =
-  "https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGlqYWIlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60";
+  "https://images.unsplash.com/photo-1689876055295-3d0dd02be320?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60";
 
 
 function Navbar() {
